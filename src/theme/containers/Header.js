@@ -4,7 +4,7 @@ import { media } from 'theme/utils/media'
 
 export const Header = styled.header`
   position: relative;
-  min-height: 55vh;
+  min-height: 50vh;
   text-align: left;
   @media screen and (min-width: 1600px) {
   }
