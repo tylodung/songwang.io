@@ -3,9 +3,10 @@ import { Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 import createStore from './src/state/createStore'
+import initialState from './src/state/initialState.js'
 
 exports.replaceRouterComponent = ({ history }) => {
-  const store = createStore()
+  const store = createStore(initialState)
 
   const ConnectedRouterWrapper = ({ children }) => (
     <Provider store={store}>
